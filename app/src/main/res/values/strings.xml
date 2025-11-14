@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalculoIMC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="altura">ALTURA</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="edad">EDAD</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="peso">PESO</string>
+</resources>
