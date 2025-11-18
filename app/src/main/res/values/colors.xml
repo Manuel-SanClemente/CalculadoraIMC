@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_app">#0D0518</color>
     <color name="bg_bubbles">#271047</color>
+    <color name="bg_buttons">#6600FF</color>
 </resources>

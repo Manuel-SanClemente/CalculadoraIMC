@@ -9,4 +9,6 @@
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="peso">PESO</string>
+    <string name="calcular">Calcular</string>
+    <string name="re_calcular">Re-Calcular</string>
 </resources>

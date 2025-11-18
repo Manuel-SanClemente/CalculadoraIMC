@@ -18,5 +18,9 @@
         android:id="@+id/resultImcFragment"
         android:name="com.example.calculoimc.ResultImcFragment"
         android:label="fragment_result_imc"
-        tools:layout="@layout/fragment_result_imc" />
+        tools:layout="@layout/fragment_result_imc" >
+        <action
+            android:id="@+id/action_resultImcFragment_to_imcCalculatorFragment"
+            app:destination="@id/imcCalculatorFragment" />
+    </fragment>
 </navigation>
