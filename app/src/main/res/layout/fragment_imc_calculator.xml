@@ -33,19 +33,36 @@
             android:id="@+id/masc_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="35dp"
-            app:cardCornerRadius="25dp" >
+            app:cardCornerRadius="25dp"
+            >
 
-
-            <ImageView
-                android:id="@+id/masc_symbol"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
                 android:background="@color/bg_bubbles"
-                android:padding="20dp"
-                android:src="@drawable/simbolomasc"
-                android:contentDescription="@string/masculino"
-                />
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/masc_symbol"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="20dp"
+                    android:src="@drawable/simbolomasc"
+                    android:contentDescription="@string/masculino"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -53,18 +70,33 @@
             android:id="@+id/fem_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="15dp"
             app:cardCornerRadius="25dp">
 
-
-            <ImageView
-                android:id="@+id/fem_symbol"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:background="@color/bg_bubbles"
-                android:padding="20dp"
-                android:src="@drawable/simbolofem"
-                android:contentDescription="@string/femenino"/>
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/fem_symbol"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="20dp"
+                    android:src="@drawable/simbolofem"
+                    android:contentDescription="@string/femenino"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
