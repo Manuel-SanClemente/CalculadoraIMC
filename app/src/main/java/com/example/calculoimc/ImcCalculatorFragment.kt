@@ -15,6 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 
 class ImcCalculatorFragment : Fragment() {
+    /* Función para cuando se pida crear la vista. Esta función devuelve la vista */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,15 +24,23 @@ class ImcCalculatorFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_imc_calculator, container, false)
     }
 
+    /* Una vez creada la vista, comenzamos */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /* Encuetra la toolbar */
         val toolbar = view.findViewById<MaterialToolbar>(R.id.toolbar_calculator)
 
+        /*Creamos una variable que almacenara el genero del usuario, más dos referencias a las tarjetas que referencian a ambos generos*/
         var generoVal = ""
         var masc = view.findViewById<CardView>(R.id.masc_card)
         var fem = view.findViewById<CardView>(R.id.fem_card)
 
+        /*
+        Se establecen dos eventos distintos. Una vez seleccionada la tarjeta del genero especifico, se cambia el conetnido del texto
+        a masc/fem, y se cambia el color de las dos tarjetas para reflejar la opción seleccionada
+        */
+        
         masc.setOnClickListener {
            generoVal = "masc"
            masc.setCardBackgroundColor(requireContext().getColor(R.color.bg_buttons))
@@ -44,12 +53,16 @@ class ImcCalculatorFragment : Fragment() {
             fem.setCardBackgroundColor(requireContext().getColor((R.color.bg_buttons)))
         }
 
+        /* Se obtiene la barra y el valor de la altura */
         var alturaVal = view.findViewById<TextView>(R.id.altura_valor)
         val alturaBar = view.findViewById<RangeSlider>(R.id.medidor_altura)
 
+        /*
+        Una vez se cambie la barra a través de su uso, se pasa su valor a un string, y se cambia el contenido del texto superior
+        al especificado por la barra
+        */
         alturaBar.addOnChangeListener { alturaBar, value, fromUse ->
-            var valor = value.toInt()
-            alturaVal.setText(valor.toString())
+            alturaVal.setText(value.toString())
         }
 
         var pesoVal = view.findViewById<TextView>(R.id.peso_valor)
