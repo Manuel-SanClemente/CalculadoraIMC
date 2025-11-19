@@ -22,5 +22,17 @@
         <action
             android:id="@+id/action_resultImcFragment_to_imcCalculatorFragment"
             app:destination="@id/imcCalculatorFragment" />
+        <argument
+            android:name="genero"
+            app:argType="string" />
+        <argument
+            android:name="altura"
+            app:argType="integer" />
+        <argument
+            android:name="peso"
+            app:argType="integer" />
+        <argument
+            android:name="edad"
+            app:argType="integer" />
     </fragment>
 </navigation>

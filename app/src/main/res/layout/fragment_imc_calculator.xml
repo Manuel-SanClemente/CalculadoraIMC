@@ -37,11 +37,11 @@
             >
 
             <LinearLayout
+                android:id="@+id/masc_card_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_gravity="center"
-                android:background="@color/bg_bubbles"
                 android:padding="10dp"
                 >
 
@@ -74,10 +74,10 @@
             app:cardCornerRadius="25dp">
 
             <LinearLayout
+                android:id="@+id/fem_card_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/bg_bubbles"
                 android:padding="10dp"
                 >
 
@@ -135,10 +135,10 @@
                     android:padding="10dp"/>
 
                 <TextView
-                    android:id="@+id/altura"
+                    android:id="@+id/altura_valor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    android:text="0 cm"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="30sp"
